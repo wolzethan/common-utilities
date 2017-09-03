@@ -2,14 +2,10 @@ const _ = require('lodash');
 
 const { 
     deepFind, 
-    combine, 
     deepSet, 
     arrayFind,
-    arrangeBy,
-    compare,
+    sortBy,
     arraySet,
-    findTid,
-    setTid,
  } = require('../common');
 
 let assert = require('assert');

@@ -1,6 +1,6 @@
 /**
  * Common Utilities
- * Author: Ethan Wolz <ethan@eyeballdivision.com>
+ * Author: Ethan Wolz <ethan@creadiv.io>
  */
 
 /**
