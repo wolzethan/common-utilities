@@ -61,7 +61,12 @@ const arrayFind = (arr) => (value) => {
     }
 }
 
-const sortBy = arr => (value, push) => {
+/**
+ * 
+ * Creates new object that is characterized by the key that you give it 
+ */
+
+const arrangeBy = arr => (value, push) => {
     return arr.reduce((sum, val) => {
         let v = deepFind(val, value);
         if (sum[v]) {
@@ -85,5 +90,5 @@ const arraySet = (arr) => (prop, value) => {
 exports.deepFind = deepFind;
 exports.deepSet  = deepSet;
 exports.arrayFind = arrayFind;
-exports.sortBy    = sortBy;
+exports.arrangeBy    = arrangeBy;
 exports.arraySet  = arraySet;

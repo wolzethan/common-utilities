@@ -5,7 +5,7 @@ const {
     combine, 
     deepSet, 
     arrayFind,
-    sortBy,
+    arrangeBy,
     compare,
     arraySet,
     findTid,
@@ -89,7 +89,7 @@ describe('arrayFind:', () => {
     });
 });
 
-describe('sortBy:', () => {
+describe('arrangeBy:', () => {
     const arr = [
         {
             funnel_id: 123456,
@@ -114,8 +114,8 @@ describe('sortBy:', () => {
     ];
 
     it('should return an array of objects sorted by a specific key', () => {
-        let sort = sortBy(arr);
-        let orders = sort('funnel_id', 'orders');
+        let arrange = arrangeBy(arr);
+        let orders = arrange('funnel_id', 'orders');
         assert.equal(true, orders.hasOwnProperty("123456"));
     });
 })
